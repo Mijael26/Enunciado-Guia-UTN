@@ -1,0 +1,19 @@
+cont=0
+cont2=0
+total=0
+
+#Forma de pago en efectivo ingrese "1" , con tarjeta  ingrese "0"
+
+for h in range (5):
+    n = int(input("ingrese monto : "))
+    t = int(input("ingrese forma de pago :  "))
+    if t == 1:
+        total=total+n
+        cont=cont+1
+    else:
+        total=total+n
+        cont2=cont2+1
+
+print(f"total es : {total}")
+print(f"formas de pago : {cont2}")
+print(f"En efectivo : {cont}")
